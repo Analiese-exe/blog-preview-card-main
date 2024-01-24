@@ -1,0 +1,103 @@
+:root{
+    --yellow:hsl(47, 88%, 63%);
+    --white: hsl(0, 0%, 100%);
+    --grey: hsl(0, 0%, 50%);
+}
+body {
+    background-color: var(--yellow);
+    font-family: "Figtree", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 1em;
+}
+
+.card-container {
+    background-color: var(--white);
+    padding: 1.5em;
+    max-width: 350px;
+    height: fit-content;
+    border-radius: 20px;
+    box-shadow: 8px 8px 0px rgb(0,0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.card-img{
+    border-radius: 20px;
+}
+span{
+    display: block;
+}
+.learning{
+    margin: 1.5em 0;
+    background-color: var(--yellow);
+    width: fit-content;
+    padding: 0.4em 1em;
+    font-weight: 800;
+    border-radius: 10px;
+    margin-bottom: 1em;
+}
+.publish-date{
+    margin: 0.4em 0;
+    font-weight: 600;
+}
+.card-container h2{
+    margin: 0.65em 0;
+    font-weight: 800;
+}
+.card-container h2:hover{
+  color:var(--yellow);
+  transition: .15s ease-in;
+  cursor: pointer;
+}
+.card-container p{
+    color: var(--grey);
+    margin: 0.3em 0;
+    font-size: 0.9em;
+}
+.profile{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 1em;
+    margin-top: 1.5em;
+    color: black;
+    font-weight: 800;
+}
+.profile-img{
+    max-width: 50px;
+}
+@media(max-width:475px){
+    body{
+        margin: auto 2em;
+    }
+    
+    .card-container{
+        max-width: 300px;
+    }
+}
+@media(max-width:395px){
+    body{
+        margin: auto 2em;
+    }
+    .card-container{
+        max-width: 250px;
+    }
+}
+@media(max-width:290px){
+    body{
+        margin: auto 2em;
+    }
+    
+    .card-container{
+        max-width: 200px;
+    }
+}
